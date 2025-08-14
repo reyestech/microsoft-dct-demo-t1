@@ -271,3 +271,192 @@ This Microsoft Data Center Technician (CO+I) Demo illustrates the complete opera
 
 The mock artifacts—ranging from rack elevations to incident workflows—showcase your ability to plan meticulously, execute precisely, and communicate clearly under operational constraints. Whether used in an interview, a portfolio review, or a training exercise, this demo conveys readiness to handle complex data center tasks while maintaining zero safety incidents, SLA adherence, and continuous improvement.
 
+---
+---
+---
+---
+
+# microsoft-dct-env-monitor
+# Microsoft: Data Center Environmental Monitoring Demo
+
+**Your Name | Data Center Technician (CO+I)** | **[Google Docs Version](https://docs.google.com/)**
+
+---
+
+![Replace with your banner image](assets/env_dashboard.png)
+
+# Introduction & Methodology
+
+## Introduction
+This project simulates real-world **environmental monitoring** inside a Microsoft CO+I data center.  
+Using mock SNMP sensor data, dashboards, and SOPs, it demonstrates how a DCT monitors **rack temperature, humidity, and airflow** to maintain compliance with operational standards.
+
+## Methodology
+A four-phase monitoring lifecycle that mirrors CO+I environmental health best practices.
+
+| Phase | Objective | Key Actions |
+|---|---|---|
+| 1. Sensor Baseline | Confirm normal readings | Install & calibrate SNMP-based sensors |
+| 2. Data Collection | Automate telemetry | Poll environmental data every 60 sec |
+| 3. Alerting | Detect anomalies early | Threshold-based alerts for temp/humidity |
+| 4. Reporting | Share performance trends | KPI dashboard for historical trends |
+
+---
+
+## Project Structure — `microsoft-dct-env-monitor`
+
+microsoft-dct-env-monitor/
+│
+├── docs/
+│ ├── Env_Monitoring_SOP.md
+│ ├── SNMP_Config_Guide.md
+│ ├── Alert_Thresholds_Table.md
+│ └── Incident_Response_Playbook.md
+│
+├── assets/
+│ ├── env_dashboard.png
+│ ├── rack_heatmap.png
+│ └── airflow_diagram.png
+│
+├── data/
+│ ├── env_logs_sample.csv
+│ └── threshold_alerts.csv
+│
+├── scripts/
+│ ├── Get-EnvTelemetry.ps1
+│ └── Generate-EnvReport.py
+│
+└── reports/
+├── Env_KPI_Dashboard.png
+└── Weekly_Env_Report.md
+
+
+---
+
+
+---
+
+## KPI Metrics – Environmental Performance
+
+| Metric                      | Value        |
+| --------------------------- | ------------ |
+| Uptime (Sensor Network)     | **99.99%**   |
+| Avg Rack Temp               | **25°C**     |
+| Avg Humidity                | **45%**      |
+| Threshold Alerts Resolved   | **100%**     |
+
+---
+
+## KPI Metrics – Response Performance
+
+| Metric                      | Value        |
+| --------------------------- | ------------ |
+| Average Detection Time      | **30 sec**   |
+| Average Response Time       | **5 min**    |
+| Mean Time to Contain (MTTC) | **10 min**   |
+| Post-Incident Reviews       | **100%**     |
+
+---
+
+## Example PowerShell Script
+
+```powershell
+# Poll SNMP temperature & humidity data
+.\scripts\Get-EnvTelemetry.ps1 -Sensors "RackC12-Temp", "RackC12-Humidity" -Interval 60
+
+# Output to CSV
+Export-Csv -Path .\data\env_logs_sample.csv -NoTypeInformation
+
+```
+
+microsoft-dct-env-monitor/
+│
+├── docs/
+│ ├── Env_Monitoring_SOP.md
+│ ├── SNMP_Config_Guide.md
+│ ├── Alert_Thresholds_Table.md
+│ └── Incident_Response_Playbook.md
+│
+├── assets/
+│ ├── env_dashboard.png
+│ ├── rack_heatmap.png
+│ └── airflow_diagram.png
+│
+├── data/
+│ ├── env_logs_sample.csv
+│ └── threshold_alerts.csv
+│
+├── scripts/
+│ ├── Get-EnvTelemetry.ps1
+│ └── Generate-EnvReport.py
+│
+└── reports/
+├── Env_KPI_Dashboard.png
+└── Weekly_Env_Report.md
+
+
+---
+
+## KPI Metrics – Environmental Performance
+
+| Metric                      | Value        |
+| --------------------------- | ------------ |
+| Uptime (Sensor Network)     | **99.99%**   |
+| Avg Rack Temp               | **25°C**     |
+| Avg Humidity                | **45%**      |
+| Threshold Alerts Resolved   | **100%**     |
+
+---
+
+## KPI Metrics – Response Performance
+
+| Metric                      | Value        |
+| --------------------------- | ------------ |
+| Average Detection Time      | **30 sec**   |
+| Average Response Time       | **5 min**    |
+| Mean Time to Contain (MTTC) | **10 min**   |
+| Post-Incident Reviews       | **100%**     |
+
+---
+
+## Example PowerShell Script
+
+```powershell
+# Poll SNMP temperature & humidity data
+.\scripts\Get-EnvTelemetry.ps1 -Sensors "RackC12-Temp", "RackC12-Humidity" -Interval 60
+
+# Output to CSV
+Export-Csv -Path .\data\env_logs_sample.csv -NoTypeInformation
+```
+
+Conclusion
+
+This demo highlights proactive environmental health management in a Microsoft CO+I data center.
+By combining real-time telemetry, automated alerting, and KPI reporting, it mirrors the monitoring discipline required to protect server uptime and ensure optimal operating conditions.
+
+---
+
+---
+
+
+---
+
+---
+---
+
+
+
+
+
+
+---
+---
+
+
+
+
+
+---
+---
+---
+---
